@@ -11,9 +11,13 @@
 }
 body{
     overflow-x: hidden;
+    background-color: #f8f9fa;
 }
 html{
     font-size: 85%;
+}
+.brand:hover{
+    text-decoration: underline;
 }
 
 
@@ -27,16 +31,19 @@ p{
     font-size: .9rem;
 }
 i{
-    font-size: 1.2rem;
+    font-size: .9rem;
     margin-top: .5rem;
 }
 a{
     color: #2313f8;
 }
+h2{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
 
 .container{
-    background-color: #f8f9fa;
-    min-height: 100vh;
+    height: fit-content;
     display: flex;
     padding: 1.5rem;
     justify-content: center;
@@ -49,7 +56,7 @@ a{
     width: 22rem;
 }
 button{
-    background-color: #007bff;
+    background-color:#007bff;
     padding: .4rem;
     border-radius: .3rem;
     cursor:pointer;
@@ -68,6 +75,7 @@ button:hover{
 .jumbotron{
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     gap: 1rem;
     border-radius: .2rem;
@@ -89,6 +97,7 @@ button:hover{
     flex-direction: column;
     gap: .5rem;
     padding: 2rem;
+    height: fit-content;
 }
 .project-wrapper{
     display: flex;
@@ -102,10 +111,17 @@ button:hover{
     object-fit: cover;
 }
 
-@media screen and (max-width:800px){
+
+
+@media screen and (max-width:935px){
     html{
         font-size: 65%;
     }
+    .project-wrapper img{
+        width: 15rem;
+    }
+}
+@media screen and (max-width:770px){
     .container{
         flex-direction: column;
     }
